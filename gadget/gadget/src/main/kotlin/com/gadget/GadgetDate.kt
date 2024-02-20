@@ -1,6 +1,6 @@
 package com.gadget
 
-object GadgetUtils {
+object GadgetDate {
     val dayOfWeeksKoreaHashMap = hashMapOf(
         "Mon" to "월요일",
         "Tue" to "화요일",
