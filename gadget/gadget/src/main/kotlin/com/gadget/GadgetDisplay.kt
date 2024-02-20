@@ -9,6 +9,7 @@ import android.view.ViewGroup
 import android.view.WindowManager
 
 object GadgetDisplay {
+
     fun dpToPx(dp: Int): Int = (dp * Resources.getSystem().displayMetrics.density).toInt()
 
     fun pxToDp(px: Int): Int = (px / Resources.getSystem().displayMetrics.density).toInt()
