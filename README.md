@@ -1,4 +1,7 @@
-안드로이드 유틸 코드 모음집 라이브러리 만들어보기 
+<p>
+    <img src="./images/Gadget.webp" width="150">
+</p> 
 
-참고 문서 링크
-https://kotlinworld.com/424
+## Gadget Utils
+만능 도구로 개발을 해결하는 Gadget Utils 입니다. 안드로이드 개발에 필요한 다양한 Util 함수를 모았습니다.
+
