@@ -1,5 +1,5 @@
 <p>
-    <img src="./images/Gadget.webp" width="150">
+    <img src="./images/Gadget.webp" width="200">
 </p> 
 
 ## Gadget Utils
