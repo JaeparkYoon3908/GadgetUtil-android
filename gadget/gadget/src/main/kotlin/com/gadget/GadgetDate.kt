@@ -1,6 +1,15 @@
 package com.gadget
 
+import java.text.SimpleDateFormat
+import java.util.Date
+import java.util.Locale
+
 object GadgetDate {
+    const val DateFormat = "yyyy.MM.dd HH:mm"
+    const val DateFormat2 = "yyyy.MM.dd HH:mm:ss"
+    const val DateFormat3 = "yyyy-MM-dd"
+    const val DateFormat4 = "yyyyMMdd"
+
     val dayOfWeeksKoreaHashMap = hashMapOf(
         "Mon" to "월요일",
         "Tue" to "화요일",
@@ -17,5 +26,11 @@ object GadgetDate {
         "Jul" to "07", "Aug" to "08", "Sep" to "09",
         "Oct" to "10", "Nov" to "11", "Dec" to "12"
     )
-}
 
+    fun getTodayKorea(format: String): String {
+        val currentTime: Long = System.currentTimeMillis()
+        val todayDate = Date(currentTime)
+        val simpleFormat = SimpleDateFormat(format, Locale.KOREA)
+        return simpleFormat.format(todayDate)
+    }
+}
