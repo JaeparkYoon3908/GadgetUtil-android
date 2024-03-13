@@ -1,6 +1,7 @@
 plugins {
     id("com.android.library")
     id("org.jetbrains.kotlin.android")
+    id("maven-publish")
 }
 
 android {
@@ -39,5 +40,16 @@ dependencies {
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
 }
+publishing {
+    publications {
+        register<MavenPublication>("release") {
+            groupId = "com.github.YoonJaePark3908"
+            artifactId = "GadgetUtil-android"
+            version = "0.0.1"
 
-group="com.github.YoonJaePark3908"
+            afterEvaluate {
+                from(components["release"])
+            }
+        }
+    }
+}
