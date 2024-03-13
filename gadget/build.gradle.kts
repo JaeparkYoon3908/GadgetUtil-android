@@ -44,7 +44,8 @@ dependencies {
 afterEvaluate {
     publishing {
         publications {
-            register<MavenPublication>("release") {
+            create<MavenPublication>("maven") {
+                from (components["release"])
                 groupId = "com.github.YoonJaePark3908"
                 artifactId = "GadgetUtil-android"
                 version = "0.0.1"
