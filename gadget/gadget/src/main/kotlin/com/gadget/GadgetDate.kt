@@ -5,13 +5,9 @@ import java.util.Date
 import java.util.Locale
 
 object GadgetDate {
-    /** yyyy.MM.dd HH:mm */
     const val DateFormat = "yyyy.MM.dd HH:mm"
-    /** yyyy.MM.dd HH:mm:ss */
     const val DateFormat2 = "yyyy.MM.dd HH:mm:ss"
-    /** yyyy-MM-dd */
     const val DateFormat3 = "yyyy-MM-dd"
-    /** yyyyMMdd */
     const val DateFormat4 = "yyyyMMdd"
 
     val dayOfWeeksKoreaHashMap = hashMapOf(
