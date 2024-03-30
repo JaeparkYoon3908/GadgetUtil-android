@@ -7,3 +7,6 @@
 
 ## 과제
 - Jitpack or Maven Central 이용하여 라이브러리 배포하기
+
+[gradle 배포 가이드](https://docs.gradle.org/current/userguide/publishing_maven.html#publishing_maven:relocation)  
+[maven central 가이드](https://central.sonatype.org/publish/requirements/#github-namespaces)
