@@ -3,6 +3,11 @@ plugins {
     id("org.jetbrains.kotlin.android")
     `maven-publish`
 }
+val gadGetGroupName = "com.github.YoonJaePark3908"
+val gadGetVersion = "0.0.12"
+
+group = gadGetGroupName
+version = gadGetVersion
 
 android {
     namespace = "com.gadget"
@@ -52,9 +57,9 @@ dependencies {
 publishing {
     publications {
         create<MavenPublication>("release") {
-            groupId = "com.github.YoonJaePark3908"
+            groupId = gadGetGroupName
             artifactId = "GadgetUtil-android"
-            version = "0.0.11"
+            version = gadGetVersion
         }
     }
 }
