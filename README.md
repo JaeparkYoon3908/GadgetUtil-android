@@ -1,3 +1,5 @@
+[![](https://jitpack.io/v/YoonJaePark3908/GadgetUtil-android.svg)](https://jitpack.io/#YoonJaePark3908/GadgetUtil-android)
+
 <p>
     <img src="./images/Gadget.webp" width="200">
 </p> 
