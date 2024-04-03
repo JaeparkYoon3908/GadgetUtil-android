@@ -5,18 +5,18 @@ plugins {
 }
 
 val gadGetGroupName = "com.github.YoonJaePark3908"
-val gadGetVersion = "0.0.18"
+val gadGetVersion = "0.0.19"
 
 group = gadGetGroupName
 version = gadGetVersion
 
 android {
     namespace = "com.gadget"
-    compileSdk = 34
+    compileSdk = libs.versions.compileSdk.get().toInt()
 
     defaultConfig {
         aarMetadata {
-            minSdk = 24
+            minSdk = libs.versions.minSdk.get().toInt()
         }
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -51,10 +51,10 @@ android {
 }
 
 dependencies {
-    implementation("androidx.core:core-ktx:1.12.0")
-    testImplementation("junit:junit:4.13.2")
-    androidTestImplementation("androidx.test.ext:junit:1.1.5")
-    androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
+    implementation(libs.androidx.core.ktx)
+    testImplementation(libs.junit.junit)
+    androidTestImplementation(libs.junit)
+    androidTestImplementation(libs.androidx.test.espresso.core)
 }
 
 afterEvaluate {
