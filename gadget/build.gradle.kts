@@ -5,7 +5,7 @@ plugins {
 }
 
 val gadGetGroupName = "com.github.YoonJaePark3908"
-val gadGetVersion = "0.0.13"
+val gadGetVersion = "0.0.14"
 
 group = gadGetGroupName
 version = gadGetVersion
@@ -30,22 +30,24 @@ android {
             )
         }
     }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
     }
+
     kotlinOptions {
         jvmTarget = "17"
     }
 
-    publishing {
-        publishing {
-            singleVariant("release") {
-                withSourcesJar()
-                withJavadocJar()
-            }
-        }
-    }
+//    publishing {
+//        publishing {
+//            singleVariant("release") {
+//                withSourcesJar()
+//                withJavadocJar()
+//            }
+//        }
+//    }
 }
 
 dependencies {
