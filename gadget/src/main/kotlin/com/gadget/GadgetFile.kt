@@ -5,7 +5,7 @@ import android.graphics.BitmapFactory
 import java.io.File
 import java.io.FileInputStream
 
-object GadgetFile {
+public object GadgetFile {
     fun pathToBitmap(path: String): Bitmap? {
         return try {
             val f = File(path)

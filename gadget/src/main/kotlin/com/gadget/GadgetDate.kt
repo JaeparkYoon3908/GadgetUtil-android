@@ -4,7 +4,7 @@ import java.text.SimpleDateFormat
 import java.util.Date
 import java.util.Locale
 
-object GadgetDate {
+public object GadgetDate {
     /** yyyy.MM.dd HH:mm */
     const val DateFormat = "yyyy.MM.dd HH:mm"
     /** yyyy.MM.dd HH:mm:ss */
