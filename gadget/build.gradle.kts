@@ -3,8 +3,9 @@ plugins {
     id("org.jetbrains.kotlin.android")
     `maven-publish`
 }
+
 val gadGetGroupName = "com.github.YoonJaePark3908"
-val gadGetVersion = "0.0.12"
+val gadGetVersion = "0.0.13"
 
 group = gadGetGroupName
 version = gadGetVersion
@@ -54,12 +55,14 @@ dependencies {
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
 }
 
-publishing {
-    publications {
-        create<MavenPublication>("release") {
-            groupId = gadGetGroupName
-            artifactId = "GadgetUtil-android"
-            version = gadGetVersion
+afterEvaluate {
+    publishing {
+        publications {
+            create<MavenPublication>("release") {
+                groupId = gadGetGroupName
+                artifactId = "GadgetUtil-android"
+                version = gadGetVersion
+            }
         }
     }
 }

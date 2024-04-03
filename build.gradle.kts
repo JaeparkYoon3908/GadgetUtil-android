@@ -15,3 +15,7 @@ buildscript {
         classpath("com.github.dcendents:android-maven-gradle-plugin:2.1")
     }
 }
+
+task("clean", Delete::class) {
+    delete = setOf(rootProject.buildDir)
+}
