@@ -54,7 +54,7 @@ publishing {
         create<MavenPublication>("release") {
             groupId = "com.github.YoonJaePark3908"
             artifactId = "GadgetUtil-android"
-            version = "0.0.8"
+            version = "0.0.10"
         }
     }
 }
