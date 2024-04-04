@@ -5,7 +5,7 @@ plugins {
 }
 
 val gadGetGroupName = "com.github.YoonJaePark3908"
-val gadGetVersion = "0.0.22"
+val gadGetVersion = "0.0.23"
 
 group = gadGetGroupName
 version = gadGetVersion
@@ -56,8 +56,6 @@ dependencies {
     testImplementation(libs.junit.junit)
     androidTestImplementation(libs.junit)
     androidTestImplementation(libs.androidx.test.espresso.core)
-
-    implementation(libs.gadget.utils)
 }
 
 afterEvaluate {

@@ -94,7 +94,7 @@ revealswipe = { module = "de.charlex.compose:revealswipe", version.ref = "reveal
 room-compiler = { module = "androidx.room:room-compiler", version.ref = "roomCompiler" }
 supported-picker-dialogs = { module = "com.github.Ibotta:Supported-Picker-Dialogs", version.ref = "supportedPickerDialogs" }
 junit-junit = { group = "junit", name = "junit", version.ref = "junit-junit" }
-gadget-utils = { module = "com.github.YoonJaePark3908:GadgetUtil-android", version.ref = "gadGet" }
+#gadget-utils = { module = "com.github.YoonJaePark3908:GadgetUtil-android", version.ref = "gadGet" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "androidGradlePlugin" }
