@@ -5,7 +5,7 @@ plugins {
 }
 
 val gadGetGroupName = "com.github.YoonJaePark3908"
-val gadGetVersion = "0.0.21"
+val gadGetVersion = "0.0.22"
 
 group = gadGetGroupName
 version = gadGetVersion
@@ -15,9 +15,7 @@ android {
     compileSdk = libs.versions.compileSdk.get().toInt()
 
     defaultConfig {
-        aarMetadata {
-            minSdk = libs.versions.minSdk.get().toInt()
-        }
+        minSdk = libs.versions.minSdk.get().toInt()
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -58,6 +56,8 @@ dependencies {
     testImplementation(libs.junit.junit)
     androidTestImplementation(libs.junit)
     androidTestImplementation(libs.androidx.test.espresso.core)
+
+    implementation(libs.gadget.utils)
 }
 
 afterEvaluate {
