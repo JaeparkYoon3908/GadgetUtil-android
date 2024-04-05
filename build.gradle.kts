@@ -3,16 +3,3 @@ plugins {
     alias(libs.plugins.android.library) apply false
     alias(libs.plugins.kotlin.android) apply false
 }
-
-buildscript {
-    repositories {
-        maven(url="https://jitpack.io")
-        mavenCentral()
-        google()
-    }
-
-    dependencies {
-        classpath(libs.kotlin.gradle.plugin)
-        classpath(libs.gradle)
-    }
-}

@@ -5,7 +5,7 @@ plugins {
 }
 
 val gadGetGroupName = "com.github.YoonJaePark3908"
-val gadGetVersion = "0.0.33"
+val gadGetVersion = "0.0.34"
 
 group = gadGetGroupName
 version = gadGetVersion
@@ -37,18 +37,6 @@ android {
     kotlinOptions {
         jvmTarget = "17"
     }
-
-    publishing {
-        singleVariant("release") {
-            withSourcesJar()
-            withJavadocJar()
-        }
-        multipleVariants {
-            withSourcesJar()
-            withJavadocJar()
-            allVariants()
-        }
-    }
 }
 
 dependencies {
@@ -67,5 +55,11 @@ afterEvaluate {
                 version = gadGetVersion
             }
         }
+    }
+}
+
+tasks.withType<AbstractArchiveTask> {
+    if(this.name == "releaseSourcesJar" || this.name == "debugSourcesJar") {
+        enabled = false
     }
 }
