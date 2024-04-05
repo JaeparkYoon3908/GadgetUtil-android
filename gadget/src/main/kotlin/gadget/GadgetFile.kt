@@ -1,4 +1,4 @@
-package com.gadget
+package gadget
 
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
