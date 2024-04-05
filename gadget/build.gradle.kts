@@ -5,7 +5,7 @@ plugins {
 }
 
 val gadGetGroupName = "com.github.YoonJaePark3908"
-val gadGetVersion = "0.0.27"
+val gadGetVersion = "0.0.29"
 
 group = gadGetGroupName
 version = gadGetVersion
@@ -63,7 +63,7 @@ afterEvaluate {
         publications {
             create<MavenPublication>("release") {
                 groupId = gadGetGroupName
-                artifactId = "gadget"
+                artifactId = "GadgetUtil-android"
                 version = gadGetVersion
             }
         }
