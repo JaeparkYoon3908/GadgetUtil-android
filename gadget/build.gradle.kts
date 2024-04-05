@@ -5,13 +5,13 @@ plugins {
 }
 
 val gadGetGroupName = "com.github.YoonJaePark3908"
-val gadGetVersion = "0.0.32"
+val gadGetVersion = "0.0.33"
 
 group = gadGetGroupName
 version = gadGetVersion
 
 android {
-    namespace = "gadget"
+    namespace = "com.gadget"
     compileSdk = libs.versions.compileSdk.get().toInt()
 
     defaultConfig {
