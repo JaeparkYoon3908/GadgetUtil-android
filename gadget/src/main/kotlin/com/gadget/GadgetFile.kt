@@ -1,11 +1,11 @@
-package gadget
+package com.gadget
 
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
 import java.io.File
 import java.io.FileInputStream
 
-public object GadgetFile {
+object GadgetFile {
     fun pathToBitmap(path: String): Bitmap? {
         return try {
             val f = File(path)

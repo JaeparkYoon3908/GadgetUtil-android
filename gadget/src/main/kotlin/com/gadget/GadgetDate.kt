@@ -1,10 +1,10 @@
-package gadget
+package com.gadget
 
 import java.text.SimpleDateFormat
 import java.util.Date
 import java.util.Locale
 
-public object GadgetDate {
+object GadgetDate {
     /** yyyy.MM.dd HH:mm */
     const val DateFormat = "yyyy.MM.dd HH:mm"
     /** yyyy.MM.dd HH:mm:ss */

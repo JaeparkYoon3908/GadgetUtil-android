@@ -1,4 +1,4 @@
-package gadget
+package com.gadget
 
 import android.app.Dialog
 import android.content.Context
@@ -8,7 +8,7 @@ import android.os.Build
 import android.view.ViewGroup
 import android.view.WindowManager
 
-public object GadgetDisplay {
+object GadgetDisplay {
 
     fun dpToPx(dp: Int): Int = (dp * Resources.getSystem().displayMetrics.density).toInt()
 
