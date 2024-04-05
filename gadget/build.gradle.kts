@@ -5,7 +5,7 @@ plugins {
 }
 
 val gadGetGroupName = "com.github.YoonJaePark3908"
-val gadGetVersion = "0.0.34"
+val gadGetVersion = "0.0.36"
 
 group = gadGetGroupName
 version = gadGetVersion
@@ -41,6 +41,11 @@ android {
 
 dependencies {
     implementation(libs.androidx.core.ktx)
+    implementation(fileTree(mapOf(
+        "dir" to "../gradle/wrapper",
+        "include" to listOf("*.aar", "*.jar"),
+        "exclude" to listOf("*.aar", "*.jar")
+    )))
     testImplementation(libs.junit.junit)
     androidTestImplementation(libs.junit)
     androidTestImplementation(libs.androidx.test.espresso.core)
