@@ -5,7 +5,7 @@ plugins {
 }
 
 val gadGetGroupName = "com.github.YoonJaePark3908"
-val gadGetVersion = "0.0.29"
+val gadGetVersion = "0.0.30"
 
 group = gadGetGroupName
 version = gadGetVersion
