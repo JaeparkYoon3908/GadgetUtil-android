@@ -4,8 +4,8 @@ plugins {
     `maven-publish`
 }
 
-val gadGetGroupName = "com.github.YoonJaePark3908"
-val gadGetVersion = "0.0.24"
+val gadGetGroupName = "com.github.YoonJaePark3908.GadgetUtil-android"
+val gadGetVersion = "0.0.25"
 
 group = gadGetGroupName
 version = gadGetVersion
@@ -63,7 +63,7 @@ afterEvaluate {
         publications {
             create<MavenPublication>("release") {
                 groupId = gadGetGroupName
-//                artifactId = "GadgetUtil-android"
+                artifactId = "GadgetUtil-android"
                 version = gadGetVersion
             }
         }
