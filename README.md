@@ -26,7 +26,7 @@ implementation("com.github.YoonJaePark3908:GadgetUtil-android:Tag")
 ## 사용법
 Gadget Util은 Kotlin의 object로 구성되어 있습니다. Kotlin의 object는 thread-safe 하며 싱글턴으로 생성됩니다.  
 <br>
-ex) 
+사용 예시
 ```kotlin
 val imagePx = GadgetDisplay.dpToPx(10)
 ```
