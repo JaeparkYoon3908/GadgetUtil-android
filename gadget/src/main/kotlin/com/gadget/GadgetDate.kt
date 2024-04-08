@@ -31,10 +31,14 @@ object GadgetDate {
         "Oct" to "10", "Nov" to "11", "Dec" to "12"
     )
 
-    fun getTodayKorea(format: String): String {
+    /**
+     * format : GadgetDate.DateFormat
+     * locale : Locale.KOREA, Locale.USA...
+     */
+    fun getToday(format: String, locale: Locale): String {
         val currentTime: Long = System.currentTimeMillis()
         val todayDate = Date(currentTime)
-        val simpleFormat = SimpleDateFormat(format, Locale.KOREA)
+        val simpleFormat = SimpleDateFormat(format, locale)
         return simpleFormat.format(todayDate)
     }
 }

@@ -11,8 +11,11 @@ import android.view.WindowManager
 object GadgetDisplay {
 
     fun dpToPx(dp: Int): Int = (dp * Resources.getSystem().displayMetrics.density).toInt()
-
+    fun dpToPx(dp: Float): Float = (dp * Resources.getSystem().displayMetrics.density)
+    fun dpToPx(dp: Double): Double = (dp * Resources.getSystem().displayMetrics.density)
     fun pxToDp(px: Int): Int = (px / Resources.getSystem().displayMetrics.density).toInt()
+    fun pxToDp(px: Float): Float = (px / Resources.getSystem().displayMetrics.density)
+    fun pxToDp(px: Double): Double = (px / Resources.getSystem().displayMetrics.density)
 
     /**
      * 다이얼로그 화면 크기 조정
