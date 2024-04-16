@@ -28,5 +28,5 @@ Gadget Util은 Kotlin의 object로 구성되어 있습니다. Kotlin의 object�
 <br>
 사용 예시
 ```kotlin
-val imagePx = GadgetDisplay.dpToPx(10)
+val 10dpToPx = GadgetDisplay.dpToPx(10)
 ```
