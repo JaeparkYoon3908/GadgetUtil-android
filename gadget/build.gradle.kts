@@ -4,14 +4,14 @@ plugins {
     `maven-publish`
 }
 
-val gadGetGroupName = "com.github.YoonJaePark3908"
-val gadGetVersion = "0.1.0"
+val gadGetGroupName = "com.github.JaeparkYoon3908"
+val gadGetVersion = "0.1.1"
 
 group = gadGetGroupName
 version = gadGetVersion
 
 android {
-    namespace = "com.gadget"
+    namespace = "gadget"
     compileSdk = libs.versions.compileSdk.get().toInt()
 
     defaultConfig {
@@ -41,9 +41,12 @@ android {
 
 dependencies {
     implementation(libs.androidx.core.ktx)
+
+    //Test Code
     testImplementation(libs.junit.junit)
     androidTestImplementation(libs.junit)
     androidTestImplementation(libs.androidx.test.espresso.core)
+    androidTestImplementation(libs.androidx.test.runner)
 }
 
 afterEvaluate {
