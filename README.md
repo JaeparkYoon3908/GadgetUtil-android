@@ -22,14 +22,14 @@ Step 2-1 or 2-2 중 하나를 선택하여 다음과 같이 추가해주세요.
 
 Step 2-1. 모듈 안 build.gradle의 dependency에 다음과 같이 추가해 주세요. 
 ```kotlin
-implementation("com.github.YoonJaePark3908:GadgetUtil-android:Tag")
+implementation("com.github.JaeparkYoon3908:GadgetUtil-android:Tag")
 ```
 Step 2-2 libs.versions.toml 사용시 다음과 같이 추가해 주세요.
 ```toml
 [versions]
 gadget = "tag"
 [libraries]
-gadget-util = { group = "com.github.YoonJaePark3908", name = "GadgetUtil-android", version.ref = "gadget" }
+gadget-util = { group = "com.github.JaeparkYoon3908", name = "GadgetUtil-android", version.ref = "gadget" }
 ```
 모듈 안의 build.gradle
 ```kotlin
