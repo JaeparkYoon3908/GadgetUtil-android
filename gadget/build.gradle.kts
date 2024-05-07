@@ -11,7 +11,7 @@ group = gadGetGroupName
 version = gadGetVersion
 
 android {
-    namespace = "gadget"
+    namespace = "gadget1"
     compileSdk = libs.versions.compileSdk.get().toInt()
 
     defaultConfig {

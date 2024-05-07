@@ -1,4 +1,4 @@
-package gadget
+package gadget1
 
 import android.app.Dialog
 import android.content.Context
