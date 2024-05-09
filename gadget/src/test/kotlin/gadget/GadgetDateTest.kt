@@ -1,4 +1,4 @@
-package gadget1
+package gadget
 
 import org.junit.Assert
 import org.junit.Test

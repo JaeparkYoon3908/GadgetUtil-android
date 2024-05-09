@@ -5,13 +5,13 @@ plugins {
 }
 
 val gadGetGroupName = "com.github.JaeparkYoon3908"
-val gadGetVersion = "0.1.4"
+val gadGetVersion = "0.1.1"
 
 group = gadGetGroupName
 version = gadGetVersion
 
 android {
-    namespace = "gadget1"
+    namespace = "gadget"
     compileSdk = libs.versions.compileSdk.get().toInt()
 
     defaultConfig {
@@ -41,7 +41,6 @@ android {
 
 dependencies {
     implementation(libs.androidx.core.ktx)
-
     //Test Code
     testImplementation(libs.junit.junit)
     androidTestImplementation(libs.junit)
