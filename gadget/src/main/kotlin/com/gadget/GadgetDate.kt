@@ -1,4 +1,4 @@
-package gadget
+package com.gadget
 
 import java.text.SimpleDateFormat
 import java.util.Date

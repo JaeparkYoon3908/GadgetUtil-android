@@ -1,4 +1,4 @@
-package gadget
+package com.gadget
 
 import android.app.Dialog
 import android.content.Context
@@ -23,7 +23,7 @@ object GadgetDisplay {
     fun setDialogWidthResize(context: Context, dialog: Dialog?, width: Float) {
         val windowManager = context.getSystemService(Context.WINDOW_SERVICE) as WindowManager
 
-        if (Build.VERSION.SDK_INT < 30) {
+        if (Build.VERSION.SDK_INT < 30){
             val display = windowManager.defaultDisplay
             val size = Point()
 
